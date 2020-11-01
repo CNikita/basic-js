@@ -277,9 +277,9 @@ describe('Carbon dating', () => {
     });
 
     it.optional('should handle inadequate values', () => {
-      assert.equal(dateSample('-5243.384963291924'), false);
-      assert.equal(dateSample('-5.446346490711886'), false);
-      assert.equal(dateSample('Infinity'), false);
+      assert.equal(dateSample('9000'), false);
+      assert.equal(dateSample('15.1'), false);
+      assert.equal(dateSample('0'), false);
       assert.equal(dateSample('-5'), false);
       assert.equal(dateSample('-55.8'), false);
     });
